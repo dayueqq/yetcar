@@ -120,6 +120,7 @@
 			</span>
 		</div>
 	</div>
+	<!--商品信息介绍-->
 	<div class="w">
 		<div class="product_intro">
 			<!--商品名称简介开始-->
@@ -242,22 +243,43 @@
 				<div class="buy_btns">
 					<input type="button" value="立刻购买" class="go_buy">
 					<input type="button" value="加入购物车" class="add_fav">
+					<br clear="all">
 				</div>
+				<br clear="all">
+			</div>
 			</div>
 			<div class="preview">
 				<div class="pic_zoom">
+					<img src="../res/img/test-pic-436-377.jpg" class="pic-preview" id="pic-preview"/>
 				</div>
-				<div class="pic-list">
-					<a href="javascript:;" class="piclist_control"></a>
-					<a href="javascript:;" class="piclist_control"></a>
-					<div class="pic-items">
-						<ul>
-							<li><li>
+				<div class="pic_list" id="pic-list">
+					<a href="javascript:;" class="piclist_control_left" id="move-left" onclick="picMoveLeft()"></a>
+					<div class="pic_items">
+						<ul class="pic_small_list" id="pic-small-list">
+							<li onmouseover="picOver('pic_small_0');">
+								<img src="../res/img/test-pic-436-377.jpg" class="pic_small" id="pic_small_0"/>
+							</li>
+							<li onmouseover="picOver('pic_small_1');">
+								<img src="../res/img/test-pic-436-377.jpg" class="pic_small" id="pic_small_1"/>
+							</li>
+							<li onmouseover="picOver('pic_small_2');">
+								<img src="../res/img/test-pic-436-377.jpg" class="pic_small" id="pic_small_2"/>
+							</li>
+							<li onmouseover="picOver('pic_small_3');">
+								<img src="../res/img/test-pic-436-377.jpg" class="pic_small" id="pic_small_3"/>
+							</li>
+							<li onmouseover="picOver('pic_small_4');">
+								<img src="../res/img/test-pic-436-377.jpg" class="pic_small" id="pic_small_4"/>
+							</li>
+							<li onmouseover="picOver('pic_small_5');">
+								<img src="../res/img/test-pic-436-377.jpg" class="pic_small" id="pic_small_5"/>
+							</li>
 						</ul>
 					</div>
+					<a href="javascript:;" class="piclist_control_right" onclick="picMoveRight()"></a>
 				</div>
 			</div>
-		</div>
+		<br clear="all">
 	</div>
 	<div class="w">
 	</div>

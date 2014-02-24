@@ -44,3 +44,39 @@ function add(){
 	var tmp = parseInt($("#num").val())+1;
 	$("#num").val(tmp);
 }
+
+//商品缩略图修改
+function picOver(strID){
+	var a = document.getElementById('pic-preview');
+	var b = document.getElementById(strID);
+	a.src = "../res/img/test/test-pic-436-377-"+strID+".jpg";
+}
+//商品缩略图向左移动
+function picMoveLeft(){
+	var a = document.getElementById("pic-small-list");
+	var b = $(a).position().left;
+	var e = $(a).width();
+	var f = -b;
+	var g = e - f;
+	if( g > 310){
+		var d = b - 61;
+		$(a).css({ left:b}).stop().animate({ left:d }, { duration: 400 });
+	}
+	else{
+		$("#picMoveLeft").css("disable","true");
+	}
+}
+//商品缩略图向右移动
+function picMoveRight(){
+	var a = document.getElementById("pic-small-list");
+	var b = $(a).position().left;
+	var e = $(a).width();
+	var f = e - 310;
+	if( b < -30){
+		var d = b + 60;
+		$(a).css({ left:b}).stop().animate({ left:d }, { duration: 400 });
+	}
+	else if(b >= -30){
+		$("#picMoveRight").attr("disable","true");
+	}
+}

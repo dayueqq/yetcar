@@ -46,6 +46,7 @@ a{
 .product_detail{
 	width:840px;
 	height:auto;
+	float: right;
 }
 .summary{
 	width:100%;
@@ -296,4 +297,72 @@ a{
 }
 .add_fav:hover{
 	background-color:#e03800;
+}
+
+/*图片预览功能*/
+.preview{
+	width:352px;
+	height:auto;
+	float:right;
+	margin-right:9px;
+}
+.pic_zoom{
+	width:352px;
+	height:352px;
+	margin-bottom:5px;
+}
+.pic-preview{
+	width:352px;
+	height:352px;
+}
+.pic_list{
+	width:352px;
+	height:54px;
+}
+.piclist_control_left{
+	width:17px;
+	height:54px;
+	display: block;
+	float: left;
+	background: url(../img/changeImg-102-54.png) 0 0;
+}
+.piclist_control_left:hover{
+	background: url(../img/changeImg-102-54.png) -34px 0;
+}
+.piclist_control_right{
+	width:17px;
+	height:54px;
+	display: block;
+	float: left;
+	margin-left:8px;
+	background: url(../img/changeImg-102-54.png) -17px 0;
+}
+.piclist_control_right:hover{
+	background: url(../img/changeImg-102-54.png) -51px 0;
+}
+.pic_items{
+	width:310px;
+	height:54px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+.pic_list li{
+	display: block;
+	float: left;
+	margin-left:8px;
+}
+.pic_small_list{
+	width:360px;
+	height:54px;
+	position: absolute;
+	left:0;
+}
+.pic_small{
+	width:50px;
+	height:50px;
+	border:1px solid #ccc;
+}
+.pic_small:hover{
+	border:1px solid #e3383b;
 }
