@@ -1,0 +1,299 @@
+/*通用开头*/
+*{
+	margin:0;
+	padding: 0;
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+/*商品展示*/
+.product_intro{
+	width:840px;
+	height:auto;
+	float:right;
+}
+/*商品名称*/
+.name{
+	width:840px;
+	height:50px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+}
+.name h1{
+	height: 1.5em;
+	font-size:16px;
+	font-weight: 700;
+	font-family: "microsoft yahei";
+	color:#666;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.name strong{
+	display: block;
+	color: #e4393c;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	font-weight: 700;
+	overflow: hidden;
+}
+/*商品价格*/
+.product_detail{
+	width:840px;
+	height:auto;
+}
+.summary{
+	width:100%;
+	height:120px;
+}
+.summary li{
+	width:100%;
+	height:18px;
+	padding:6px 0 6px 0;
+}
+.dt{
+	float: left;
+	width: 72px;
+	color:#666666;
+	font-family: "simsun";
+	text-align: right;
+	line-height: 18px;
+}
+.dd{
+	height:14px;
+}
+.dd .p_price{
+	color: #c40000;
+	font-size: 18px;
+	font-weight: 700;
+	float: left;
+	position: relative;
+	bottom:4px;
+}
+.dd span{
+	width:40px;
+	height:18px;
+	text-align: center;
+	color: #fff;
+	font-weight: 400;
+	display: block;
+	float: left;
+	margin-left:20px;
+	background-color: #666666;
+}
+.real_price{
+	color:#666666;
+	text-decoration: line-through;
+}
+.saved_money{
+	display: block;
+	width:50px;
+	margin-left: 10px;
+	color:#fff;
+	float: left;
+	font-family: "microsoft yahei";
+	text-align: center;
+	font-weight: 400;
+	background-color: #c40000;
+}
+.saved_price{
+	color:#000;
+}
+
+/*剩余时间*/
+.summary li b{
+	display: block;
+	width:18px;
+	height:18px;
+	float: left;
+	margin-left: 10px;
+	background:url("../img/shortcut-clock-18-18.png") no-repeat;
+}
+.left-time{
+	float: left;
+	height:18px;
+	font-family: "microsoft yahei";
+	line-height: 18px;
+}
+.left_time strong{
+	height:18px;
+	color: #000;
+	margin-left: 10px;	
+	float: left;
+	font-size: 14px;
+	font-weight: 700;
+}
+.left_time span{
+	height:18px;
+	margin-left:5px;
+	color:#e4393c;
+	float: left;
+	font-size: 16px;
+	font-weight: 700;
+}
+/*选择款式和数量*/
+.choose{
+	width:840px;
+	height:auto;
+	background-color: #f4f4f4;
+	margin-top: 10px;
+}
+.choose_version{
+	width:840px;
+	display: block;
+	height:auto;
+}
+.choose_version .dt{
+	float: left;
+	width:71px;
+	height:18px;
+	text-align: center;
+	margin-top: 5px;
+} 
+.choose_version .dd{
+	width:530px;
+	height:auto;
+	float: left;
+}
+.choose_version .dd .item{
+	height:23px;
+	float: left;
+	color: #666;
+	border:2px solid #ccc;
+	background-color: #fff;
+	margin-right: 10px;
+	margin-top:5px;
+}
+.choose_version .dd .selected{
+	border:2px solid #e3383b;
+	color:#e3383b;
+}
+.item_type_unchecked{
+	display: block;
+	float: left;
+	height:18px;
+	text-align: center;
+	padding:3px 0 2px 10px;
+	white-space: nowrap;
+	text-decoration: none;
+	color:#666;
+}
+.item_type_checked{
+	display: block;
+	float: left;
+	height:18px;
+	text-align: center;
+	padding:3px 0 2px 10px;
+	white-space: nowrap;
+	text-decoration: none;
+	color:#e3383b;
+}
+.choose_version .dd .item a:hover{
+	color: #e3383b;
+}
+.unchecked{
+	display:block;
+	float: left;
+	width:22px;
+	height:23px;
+	background:url("../img/shortcut-check-hui-22-23.png") no-repeat;
+}
+.checked{
+	display:block;
+	float: left;
+	width:22px;
+	height:23px;
+	background:url("../img/shortcut-check-22-23.png") no-repeat;
+}
+
+/*数量选择*/
+.choose_amount{
+	margin-top: 10px;
+}
+.choose_amount .dt{
+	float: left;
+	width:71px;
+	height:18px;
+	text-align: center;
+	margin-top: 5px;
+}
+#min{
+	width:17px;
+	height:22px;
+}
+#add{
+	width:17px;
+	height:22px;
+}
+#num{
+	width:37px;
+	height:18px;
+}
+.transport_fee{
+	margin-top: 10px;
+	height:22px;
+	display: block;
+	padding-bottom: 10px;
+}
+.transport_fee .dt{
+	float: left;
+	width:71px;
+	height:18px;
+	text-align: center;
+	margin-top: 5px;
+}
+.transport_fee .dl{
+	line-height: 22px;
+	color:#666;
+	margin-top: 5px;
+}
+.transport_fee .dl span{
+	font-size:18px;
+	color:#1c1c1c;
+}
+.buy_btns{
+	width:840px;
+	height:auto;
+	margin-top: 20px;
+}
+/*购买按钮*/
+.go_buy{
+	width:150px;
+	height:36px;
+	padding:10px auto 10px auto;
+	display: block;
+	float:left;
+	background-color:#f08300;
+	outline: none;
+	border:none;
+	font-family: "microsoft yahei";
+	font-size:16px;
+	font-weight: 600;
+	color:#fff;
+}
+.go_buy:hover{
+	background-color:#fe8300;
+}
+.add_fav{
+	width:160px;
+	height:36px;
+	padding:10px auto 10px auto;
+	display: block;
+	float:left;
+	margin-left: 20px;
+	background-color:#e3383b;
+	outline: none;
+	border:none;
+	font-family: "microsoft yahei";
+	font-size:16px;
+	font-weight: 600;
+	color:#fff;
+}
+.add_fav:hover{
+	background-color:#e03800;
+}
