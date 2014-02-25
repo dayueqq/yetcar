@@ -80,3 +80,19 @@ function picMoveRight(){
 		$("#picMoveRight").attr("disable","true");
 	}
 }
+//商品介绍选项卡切换
+function changeTab(strID_1,strID_2){
+	var a = $("#mt-nav-list").children().length;
+	var b = document.getElementById(strID_1);
+	var c = document.getElementById(strID_2);
+	for(i = 0; i < a; i++){
+		var d = 'mt-nav-'+i;
+		var e = 'mt-describe-'+i;
+		var tmp1 = document.getElementById(d);
+		var tmp2 = document.getElementById(e);
+		tmp1.className = "mt_nav_tab_unselected";
+		tmp2.className = "mt_describe";
+	}
+	b.className = "mt_nav_tab_selected";
+	c.className = "mt_describe_selected";
+}
