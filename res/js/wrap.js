@@ -1,4 +1,6 @@
-//收藏网址
+// author：陈烁斌 Giant Chan 2014-02-25
+// ----****头部js开始****----
+// 收藏网址
 function addToFavorite(){
 	alert("对不起，您的浏览器不支持此操作！\n请您使用菜单栏或Ctrl+D收藏本站。");
 }
@@ -46,3 +48,4 @@ var funPlaceholder = function(element) {
     if(typeof document.getElementsByClassName !='function'){  
          document.getElementsByClassName=getElementsByClassName;  
     }  
+// ----****头部js结束****----

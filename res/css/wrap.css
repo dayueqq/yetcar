@@ -1,3 +1,17 @@
+/*通用开头开始*/
+*{
+	margin:0;
+	padding: 0;
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*通用开头结束*/
+/*头部通用css 开始*/
 .shortcut{
 	width:100%;
 	height:30px;
@@ -134,6 +148,7 @@
 	border:3px solid #efefef;
 }
 .search_input{
+	float:left;
 	width:406px;
 	height:20px;
 	padding:5px;
@@ -142,7 +157,8 @@
 	font-size:14px;
 }
 .search_button{
-	width:75px;
+	float: left;
+	width:78px;
 	height:30px;
 	border:none;
 	outline:none;
@@ -213,7 +229,6 @@
 	width:100%;
 	height:auto;
 	margin-top: 10px;
-	margin-left:5px;
 	margin-bottom: 10px;
 }
 .bread_crumb .w a{
@@ -231,3 +246,143 @@
 	font-size: 18px;
 	font-family: "microsoft yahei";
 }
+/*通用头部css结束*/
+/*通用footer css*/
+.footer{
+	width:100%;
+	height:240px;
+	border-top: 2px solid #d1d1d1;
+}
+.footer_tab{
+	width:200px;
+	height:190px;
+	display: block;
+	float: left;
+	margin-top: 20px;
+}
+.footer_tab_left{
+	width:24px;
+	height:190px;
+	float: left;
+	margin-left: 13px;
+	padding-top: 20px
+}
+.ft_icon{
+	width:24px;
+	height:24px;
+}
+.footer_tab_right{
+	width:140px;
+	height:190px;
+	float: left;
+	margin-left: 20px;
+	padding-top:20px;
+	border-right: 2px dotted #d1d1d1;
+}
+.ft_head{
+	display: block;
+	height:24px;
+	font-family: "microsoft yahei";
+	font-size:16px;
+	font-weight:700;
+	color:#c22121;
+	margin-bottom: 15px;
+}
+.ft_item{
+	display: block;
+	height:20px;
+	line-height: 20px;
+	font-size:12px;
+	font-weight: normal;
+	color:#1c1c1d;
+}
+.ft_item a{
+	display: block;
+	height:20px;
+	line-height: 20px;
+	font-size:12px;
+	font-weight: normal;
+	color:#1c1c1d;
+}
+.ft_item a:hover{
+	display: block;
+	height:20px;
+	line-height: 20px;
+	font-size:12px;
+	font-weight: normal;
+	color:#c40000;
+	text-decoration: underline;
+}
+.footer_tab_item{
+	margin-top: 20px;
+	margin-left:23px;
+}
+.ft_tel{
+	display: block;
+	width:160px;
+	height:36px;
+}
+.ft_tel_num{
+	font-family: "microsoft yahei";
+	font-weight: 700;
+	font-size: 22px;
+	color:#ff6600;
+	margin-top: 10px;
+}
+.ft_service_time{
+	color:#999;
+}
+/*通用footer css结束*/
+/*通用copyright开始*/
+.about_us{
+	width:41%;
+	height:auto;
+	margin:10px auto 10px auto;
+}
+.about_us ul{
+	width:;
+	height:auto;
+}
+.about_item{
+	display: block;
+	float: left;
+	border-right:2px solid #d1d1d1;
+}
+.about_item a{
+	display: block;
+	width:auto;
+	height:auto;
+	margin-left:10px;
+	margin-right:10px;
+	font-family: "microsoft yahei";
+	font-size:12px;
+	font-weight: normal;
+	color:#666;
+}
+.about_item a:hover{
+	color:#E4393C;
+	text-decoration: underline;
+}
+.item_special{
+	border-right:none;
+}
+.cp_item{
+	width:100%;
+	height:auto;
+}
+.cp_item p{
+	width:100%;
+	height:auto;
+	font-size:12px;
+	font-family: "microsoft yahei";
+	font-weight: normal;
+	color:#666;
+	text-align: center;
+}
+.cp_safety{
+	display: block;
+	width:487px;
+	height:57px;
+	margin:10px auto 10px auto;
+}
+/*通用copyright结束*/
