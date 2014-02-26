@@ -1,0 +1,56 @@
+/*通用开头开始*/
+*{
+	margin:0;
+	padding: 0;
+	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*通用开头结束*/
+.header{
+	width:1210px;
+	height:100px;
+	margin: 0 auto;
+	border-bottom: 2px solid #fafafa;
+}
+.logo{
+	width:198px;
+	height:55px;
+	float: left;
+	margin:22px 0 23px 0;
+	padding-right: 50px;
+	border-right: 2px solid #e8e8e8;
+}
+.say_hello{
+	font-family: "microsoft yahei";
+	font-size:32px;
+	font-weight: 600;
+	line-height: 100px;
+	width:160px;
+	height:32px;
+	text-align: center;
+	float: left;
+}
+.login_body{
+	width:1210px;
+	height:600px;
+	margin:0 auto;
+}
+.login_left{
+	width:700px;
+	height:200px;
+	float: left;
+}
+.login_pic{
+	width:500px;
+	height:150px;
+	margin-top: 120px;
+	margin-left: 100px;
+	display: block;
+	border: none;
+}
+
