@@ -1,0 +1,286 @@
+.user_center{
+	width:998px;
+	height:480px;
+	margin:15px auto;
+	border:solid #d9d9d9 1px;
+}
+.center_left{
+	width:149px;
+	height:480px;
+	border-right:solid #d9d9d9 1px;
+	float: left;
+}
+.center_left ul{
+	margin-top: 10px;
+}
+.center_left ul li{
+	text-align: center;
+	width:120px;
+	height: auto;
+	padding:10px 0 0 0;
+	margin:0 auto;
+}
+.center_left ul li a{
+	text-decoration: none;
+	color: #000;
+}
+.center_left ul li a.is_select{
+	text-decoration: none;
+	color: #c40000;
+}
+.center_left ul li a:hover{
+	color:#c40000;
+}
+
+.center_right{
+	width:848px;
+	height:auto;
+	float: left;
+}
+.table_head{
+	width:848px;
+	height:17px;
+	margin:20px 0 10px 0;
+}
+.table_head li{
+	font-size: 12px;
+	color: #000;
+	float: left;
+	padding: 0 27px 0 13px;
+	border-left:solid #d9d9d9 1px;
+}
+.table_head li.product_head_li{
+	border:none;
+	padding-right:140px;
+	padding-left:35px;
+}
+.table_head li.product_head_li1{
+	padding-right:67px;
+}
+.table_head li.product_head_li2{
+	padding-right:47px;
+}
+
+.table_list_box{
+	width:810px;
+	height:366px;
+	overflow: hidden;
+	margin:0 auto;
+	margin-bottom:18px;
+}
+.table_list{
+	width:810px;
+	height:60px;
+	background: #f8f8f8;
+	border-bottom:solid #dcdcdc 1px;
+}
+.table_list li{
+	float: left;
+}
+.table_list li div{
+	margin-top:11px;
+	margin-left:15px;
+}
+.product_list_li{
+	width:204px;
+	height: 60px;
+}
+.product_list_li1{
+	width:117px;
+	height: 60px;
+	background:#f0f0f0;
+}
+.product_list_li2{
+	width:77px;
+	height: 60px;
+}
+.product_list_li3{
+	width:129px;
+	height: 60px;
+	background:#f0f0f0;
+}
+.product_list_li4{
+	width:109px;
+	height: 60px;
+}
+.product_list_li5{
+	background:#f0f0f0;
+	width:89px;
+	height: 60px;
+}
+.product_list_li6{
+	width:80px;
+	height: 60px;
+}
+/* li-detail*/
+.product_list_li div img{
+	margin-right:7px;
+	float: left;
+}
+.product_name{
+	display: block;
+	width:130px;
+	height:35px;
+	float: left;
+	color:#000;
+	text-decoration: none;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space:
+}
+.product_name:hover{
+	text-decoration:underline;
+	color:red;
+}
+.product_list_li6 div a{
+	color:#005ea7;
+}
+.product_list_li6 div a:hover{
+	color:red;
+}
+
+/*page*/
+.change_page{
+	width:830px;
+	height:45px;
+}
+.change_page a{
+	width:60px;
+	height: 28px;
+	display: block;
+	line-height: 28px;
+	color:#666;
+}
+.change_page a:hover{
+	color:red;
+}
+.down{
+	float:right;
+	width:60px;
+	height: 28px;
+	text-align: center;
+	border:solid #ccc 1px;
+	border-radius: 7px;
+}
+.change_page span{
+	float:right;
+	line-height: 28px;
+	text-align: center;
+	width:30px;
+	height: 20px;
+}
+.up{
+	float:right;
+	width:60px;
+	height: 28px;
+	text-align: center;
+	border:solid #ccc 1px;
+	border-radius: 7px;
+}
+.disable_btn{
+	float:right;
+	width:60px;
+	height: 28px;
+	text-align: center;
+	border:solid #ccc 1px;
+	border-radius: 7px;
+}
+.disable_btn a{
+	color:#ccc;
+}
+.disable_btn a:hover{
+	color:#ccc;
+}
+
+/*function related*/
+.address{
+	display:block;
+}
+.order{
+	display: none;
+}
+/*管理我的收货地址开始*/
+.address_list{
+	width:100%;
+	height:100%;
+}
+.address_item{
+	display: block;
+	float: left;
+	width:236px;
+	height:106px;
+	margin-left: 37px;
+	margin-top:30px;
+	background:url("../img/address/address-background-hui-236-106.png") no-repeat;
+	position: relative;
+}
+.address_item:hover{
+	background:url("../img/address/address-background-236-106.png") no-repeat;
+}
+.name{
+	font-family: "microsoft yahei";
+	font-size:12px;
+	color:#1c1c1c;
+	width:210px;
+	height:12px;
+	line-height: 12px;
+	text-align: left;
+	padding:15px 0 8px 10px;
+	margin-left: 6px;
+	border-bottom: 1px solid #f1f1f1;
+}
+.addr_info{
+	font-family: "microsoft yahei";
+	font-size:12px;
+	color:#1c1c1c;
+	width:210px;
+	line-height: 18px;
+	text-align: left;
+	padding:10px 0 0 10px;
+	margin-left: 6px;
+	overflow: hidden;
+}
+.overlay{
+	display: none;
+	width:226px;
+	height:96px;
+	position: absolute;
+	top:5px;
+	left:5px;
+	background: url("../img/address/address-overlay-226-96.png") repeat;
+}
+.delete{
+	display: block;
+	height:12px;
+	line-height: 14px;
+	font-family: "microsoft yahei";
+	font-size: 12px;
+	color:#fff;
+	font-weight: normal;
+	position: absolute;
+	bottom: 5px;
+	left:150px;
+	padding-right: 10px;
+	border-right:1px solid #fff;
+}
+.modify{
+	display: block;
+	height:12px;
+	line-height: 14px;
+	font-family: "microsoft yahei";
+	font-size: 12px;
+	color:#fff;
+	font-weight: normal;
+	position: absolute;
+	bottom: 5px;
+	left:195px;
+}
+.delete:hover{
+	text-decoration: underline;
+	color: #ffff00;
+}
+.modify:hover{
+	text-decoration: underline;
+	color:#ffff00;
+}
+/*管理我的收货地址结束*/
