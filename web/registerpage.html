@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>悦车商城 (yetcar.com)-正品低价、品质保障、货到付款、配送及时、放心服务、轻松购物！</title>
+	<meta name="description" content="悦车商城 (yetcar.com)-专业的汽车用品网上购物商城，在线销售上千种汽车优质商品。便捷、诚信的服务，为您提供愉悦的网上购物体验! ">
+	<meta name="Keywords" content="网上购物,网上汽车商城,悦车商城，汽车用品商城">
+	<link rel="stylesheet" type="text/css" href="../res/css/loginpage.css">
+	<script src="../res/js/loginpage.js"></script>
+	<script src="../res/js/jquery.min.js"></script>
+	<script src="../res/js/iCheck.min.js"></script>
+	<link href="../res/css/square/grey.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+	$(document).ready(function(){
+		funPlaceholder(document.getElementById("login-account"));
+		funPlaceholder(document.getElementById("accreditation"));
+		funPlaceholder(document.getElementById("login-password"));
+		funPlaceholder(document.getElementById("login-password-confirm"));
+		   //for checkbox
+	     $('input').iCheck({
+    		checkboxClass: 'icheckbox_square-grey',
+    		radioClass: 'iradio_square-grey',
+  		 });
+	});
+	</script>
+</head>	
+<body>
+	<div class="header">
+		<img src="../res/img/header/logo-198-55.png" alt="yetcar mall logo" class="logo"/>
+		<div class="welcome">
+			<p class="say_hello">免费注册</p>
+		</div>
+	</div>
+	<div class="login_body">
+		<div class="login_left">
+			<img src="../res/img/loginpic-500-150.jpg" alt="登录图片" class="login_pic">
+			<p class="intro">我们专注汽车配件的品质，为顾客提供完美购物体验</p>
+		</div>
+		<div class="login_right">
+			<ul class="login_box">
+				<li class="login_li">
+					<span class="please">已注册？</span>
+					<a href="#" class="login">登录</a>			
+				</li>
+				<li>
+					<input type="text" class="login_account"id="login-account" placeholder="注册账号为：邮箱/手机号/QQ号">
+				</li>
+				<li class="choose_sex">
+					<input class="radio" type="radio" name="1" value="先生" checked/>
+					<label>先生</label>
+					<input class="radio" type="radio" name="1" value="女士"/>
+					<label>女士</label>
+				</li>
+				<li>
+					<input type="password" class="login_password" id="login-password" placeholder="密码">
+				</li>
+				<li>
+					<input type="password" class="login_password" id="login-password-confirm" placeholder="确认密码">
+				</li>
+				<li>
+					<input type="text" class="accreditation"id="accreditation" placeholder="验证码">
+					<img class="acc_pic" src="../res/img/accPic/acc_pic_01.png"/>
+					<a href="#" class="change_acc_pic">换一张</a>
+				</li>
+				<li>
+					<input type="button" class="login_btn" value="登录">
+				</li>
+				<li>
+					<input type="checkbox" class="remember_me" value="记住用户名" checked>
+                    <label class="convention">我已经阅读并同意<a class="red_word">YETCAR服务条约</a></label>
+				</li>
+			</ul>
+		</div>
+		<br clear="all">
+	</div>
+	<div class="copyright">
+		<p class="cp_info">Copyright 2014 yetcar.com yetcar.cn yetcar.com.cn ,All Rights Reserved ICP证 ：粤ICP1401009
+        </p>
+	</div>
+</body>
+</html>

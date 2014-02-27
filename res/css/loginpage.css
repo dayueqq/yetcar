@@ -171,3 +171,75 @@ a{
 	font-size: 12px;
 	margin-bottom: 20px;
 }
+
+/*注册*/
+.login_box li.login_li{
+	height: 27px;
+}
+.please{
+	margin-right:3px;
+	float:left;
+}
+.login{
+	margin-right:7px;
+	float:left;
+	color:#c40000;
+}
+.login:hover{
+	text-decoration: underline;
+}
+.login_box li.choose_sex label{
+	margin-right:10px;
+}
+.radio{
+	width:30px;
+	height: 20px;
+	opacity:1;
+}
+.login_box li.choose_sex{
+	color:#73716e;
+	height:35px;
+}
+.accreditation{
+	display: block;
+	width:183px;
+	height:auto;
+	padding-left: 10px;
+	padding-top:6px;
+	padding-bottom: 6px;
+	font-family: "microsoft yahei";
+	font-weight: normal;
+	font-size: 14px;
+	color:#1c1c1c;
+	border:1px solid #8c8c8c;
+	border-radius: 5px;
+	outline: none;
+	float: left;
+}
+.acc_pic{
+	width:50px;
+	height:27px;
+	float: left;
+	border:solid #d7d6d8 1px;
+	margin:3px 0 0 5px;
+}
+.change_acc_pic{
+	color:#666;
+	float: left;
+	margin:8px 0 0 5px;
+}
+.change_acc_pic:hover{
+	color:#c40000;
+	text-decoration: underline;
+}
+
+.login_box li label.convention{
+	font-size: 12px;
+	color:#73716e;
+}
+.red_word{
+	color:#c40000;
+}
+.red_word:hover{
+	text-decoration: underline;
+}
