@@ -6,7 +6,20 @@
 	<meta name="description" content="悦车商城 (yetcar.com)-专业的汽车用品网上购物商城，在线销售上千种汽车优质商品。便捷、诚信的服务，为您提供愉悦的网上购物体验! ">
 	<meta name="Keywords" content="网上购物,网上汽车商城,悦车商城，汽车用品商城">
 	<link rel="stylesheet" type="text/css" href="../res/css/loginpage.css">
+	<script src="../res/js/loginpage.js"></script>
 	<script src="../res/js/jquery.min.js"></script>
+	<script src="../res/js/iCheck.min.js"></script>
+	<link href="../res/css/square/grey.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+	$(document).ready(function(){
+		funPlaceholder(document.getElementById("login-account"));
+		funPlaceholder(document.getElementById("login-password"));
+		   //for checkbox
+	     $('input').iCheck({
+    		checkboxClass: 'icheckbox_square-grey'
+  		 });
+	});
+	</script>
 </head>	
 <body>
 	<div class="header">
@@ -18,12 +31,35 @@
 	<div class="login_body">
 		<div class="login_left">
 			<img src="../res/img/loginpic-500-150.jpg" alt="登录图片" class="login_pic">
-			<p class="intro"></p>
+			<p class="intro">我们专注汽车配件的品质，为顾客提供完美购物体验</p>
 		</div>
-		<div class="login_right"></div>
+		<div class="login_right">
+			<ul class="login_box">
+				<li>
+					<p>如有账号，请先登录</p>
+				</li>
+				<li>
+					<input type="text" class="login_account"id="login-account" placeholder="邮箱/手机号/QQ号">
+				</li>
+				<li>
+					<input type="password" class="login_password" id="login-password" placeholder="密码">
+				</li>
+				<li>
+					<input type="button" class="login_btn" value="登录">
+				</li>
+				<li>
+					<input type="checkbox" class="remember_me" value="记住用户名">
+                    <label>记住用户名</label>
+					<a href="#" class="forget_passwd">忘记密码</a>
+					<a href="#" class="register">免费注册</a>
+				</li>
+			</ul>
+		</div>
+		<br clear="all">
 	</div>
 	<div class="copyright">
-		<p class="cp_info"></p>
+		<p class="cp_info">Copyright 2014 yetcar.com yetcar.cn yetcar.com.cn ,All Rights Reserved ICP证 ：粤ICP1401009
+        </p>
 	</div>
 </body>
 </html>

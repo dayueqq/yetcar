@@ -27,6 +27,7 @@ var funPlaceholder = function(element) {
             element.value = placeholder;
             element.style.color = '#b2b2b2';    
         }
+         element.style.color = '#b2b2b2'; 
     }
 };
 

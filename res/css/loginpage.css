@@ -37,7 +37,7 @@ a{
 }
 .login_body{
 	width:1210px;
-	height:600px;
+	height:500px;
 	margin:0 auto;
 }
 .login_left{
@@ -53,4 +53,121 @@ a{
 	display: block;
 	border: none;
 }
-
+.intro{
+	width:500px;
+	text-align: left;
+	font-family: "microsoft yahei";
+	font-weight: 550;
+	font-size:18px;
+	color:#8c8c8c;
+	margin-left: 130px;
+	letter-spacing: 1px;
+}
+.login_right{
+	width:300px;
+	height:250px;
+	float:left;
+	margin-top: 80px;
+	margin-left: 20px;
+}
+.login_box{
+	width:100%;
+	height:auto;
+}
+.login_box li{
+	width:100%;
+	height:48px;
+}
+.login_box li p{
+	font-family: "microsoft yahei";
+	font-weight: normal;
+	font-size: 14px;
+	color:#8c8c8c;
+	line-height: 50px;
+}
+.login_account ,.login_password{
+	display: block;
+	width:280px;
+	height:auto;
+	padding-left: 10px;
+	padding-top:6px;
+	padding-bottom: 6px;
+	font-family: "microsoft yahei";
+	font-weight: normal;
+	font-size: 14px;
+	color:#1c1c1c;
+	border:1px solid #8c8c8c;
+	border-radius: 5px;
+	outline: none;
+}
+.login_btn{
+	display: block;
+	width:130px;
+	height:35px;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	background:#e3383b;
+	font-family: "microsoft yahei";
+	font-weight: 700;
+	font-size: 16px;
+	color:#fff;
+	letter-spacing: 4px;
+}
+.login_btn:hover{
+	background:#c40000;
+}
+.remember_me{
+	float: left;
+}
+.login_box li label{
+	display: block;
+	line-height: 12x;
+	font-size: 12px;
+	float: left;
+	margin-left: 5px;
+	position: relative;
+	margin-top: 2px;
+}
+.forget_passwd{
+	display: block;
+	width:auto;
+	height:auto;
+	margin-left:85px;
+	padding-right: 10px;
+	border-right:1px solid #bcbcbc;
+	float: left;
+	color:#bcbcbc;
+	margin-top: 2px;
+}
+.forget_passwd:hover{
+	text-decoration: underline;
+	color:#c40000;
+}
+.register{
+	margin-left: 10px;
+	display: block;
+	width:auto;
+	height:auto;
+	float: left;
+	margin-top: 0;
+	color: #c40000;
+	margin-top: 2px;
+}
+.register:hover{
+	text-decoration: underline;
+}
+.copyright{
+	width:1210px;
+	height:20px;
+	margin:0 auto;
+}
+.cp_info{
+	width:1210px;
+	height:20px;
+	text-align: center;
+	text-align: center;
+	color: #767074;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
