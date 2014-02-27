@@ -283,4 +283,193 @@
 	text-decoration: underline;
 	color:#ffff00;
 }
+.add_new{
+	font-size: 80px;
+	width:226px;
+	height:96px;
+	line-height: 96px;
+	margin-left: 5px;
+	margin-top: 5px;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #c9c9c9;
+	font-weight: bold;
+}
+.add_new_overlay{
+	display: block;
+	font-size: 80px;
+	width:226px;
+	height:96px;
+	line-height: 96px;
+	text-align: center;
+	color: #c9c9c9;
+	font-weight: bold;
+	margin-top: 3px;
+}
 /*管理我的收货地址结束*/
+.address_pop{
+	width:700px;
+	height:300px;
+	background: #fff;
+	border:8px solid #999999;
+}
+.pop_head{
+	width:700px;
+	height:35px;
+	background: #e6e6e6;
+}
+.pop_head p{
+	font-weight: 700;
+	font-size: 14px;
+	color:#1c1c1c;
+	line-height: 35px;
+	margin-left: 10px;
+	float: left;
+}
+.pop_close{
+	display: block;
+	width:16px;
+	height:16px;
+	margin:9px 10px 10px auto;
+	float: right;
+	background: url("../img/shortcut-close-16-16.png") no-repeat;
+}
+.pop_addr{
+	width:100%;
+	height:215px;
+}
+.pop_form{
+	width:100%;
+	height:215px;
+}
+.form_list{
+	height:215px;
+	width:100%;
+}
+.form_item{
+	width:100%;
+	height:35px;
+}
+.form_title{
+	width:80px;
+	height:20px;
+	text-align: center;
+	line-height: 20px;
+	margin:7px auto 8px 10px;
+	font-size: 12px;
+	font-weight: 700;
+	float: left;
+}
+.form_mid{
+	width:10px;
+	height:20px;
+	line-height: 20px;
+	margin:7px auto 8px 10px;
+	font-size: 14px;
+	font-weight: 700;
+	float: left;
+	color: #c40000;
+}
+#chooseArea{
+	height: 20px;
+	float: left;
+	margin:7px auto 8px 5px;
+}
+#province{
+	display: block;
+	float: left;
+	width:120px;
+}
+#city{
+	display: block;
+	float: left;
+	width: 120px;
+	margin-left: 20px;
+}
+#area{
+	display: block;
+	float: left;
+	width: 120px;
+	margin-left: 20px;
+}
+.post_code{
+	width:113px;
+	height: 20px;
+	float: left;
+	outline:none;
+	border:1px solid #999;
+	margin:7px auto 6px 5px;
+	padding-left: 5px;
+}
+.form_item_special{
+	height:70px;
+}
+.total_address{
+	white-space: wrap;
+	width:400px;
+	height: 42px;
+	float: left;
+	outline:none;
+	resize: none;
+	border:1px solid #999;
+	margin:10px auto 0 5px;
+	padding:3px 5px 3px 5px;
+}
+.recieve_name{
+	width:113px;
+	height: 20px;
+	float: left;
+	outline:none;
+	border:1px solid #999;
+	margin:7px auto 6px 5px;
+	padding-left: 5px;
+}
+.phone_num{
+	width:113px;
+	height: 20px;
+	float: left;
+	outline:none;
+	border:1px solid #999;
+	margin:7px auto 6px 5px;
+	padding-left: 5px;
+}
+.btn_group{
+	width:100%;
+	height:30px;
+	padding-top: 10px;
+}
+.sure{
+	display: block;
+	width: 60px;
+	height:25px;
+	background: #c40000;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	font-weight: 700px;
+	font-family: "microsoft yahei";
+	color: #fff;
+	float: left;
+	margin-left: 115px;
+}
+.cancel{
+	display: block;
+	width: 60px;
+	height:25px;
+	background: #ccc;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	font-weight: 700px;
+	font-family: "microsoft yahei";
+	color: #fff;
+	float: left;
+	margin-left: 20px;
+}
+.sure:hover{
+	background: #e60012;
+}
+.cancel:hover{
+	background: #666;
+}

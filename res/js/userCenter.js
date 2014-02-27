@@ -31,3 +31,14 @@ function hideOverlay(strID){
 	var b = document.getElementById(a);
 	b.style.display = "none";
 }
+function hidePopForm(){
+	var a = document.getElementById("address-pop");
+	a.style.display = "none";
+	$('.js_lb_overlay').css("display","none");
+}
+function addNewAddress(){
+	$('#address-pop').lightbox_me({
+        centered: true, 
+        closeSelector:'#popClose'
+    });
+}

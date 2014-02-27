@@ -9,13 +9,6 @@
 	<link rel="stylesheet" href="../res/css/userCenter.css" class="css">
 	<!--wrap通用-->
 	<link rel="stylesheet" type="text/css" href="../res/css/wrap.css">
-	<script type="text/javascript" src="../res/js/userCenter.js"></script>
-	<script type="text/javascript" src="../res/js/wrap.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-		funPlaceholder(document.getElementById("search_input"));
-	});
-	</script>
 </head>	
 <body>
 	<!--顶部通用通栏开始-->
@@ -206,7 +199,7 @@
 							<div class="overlay" id="overlay-0">
 								<a href="#" class="delete" onclick="confirm('您确定要删除此地址？');">删除
 								</a>
-								<a href="#" class="modify">修改
+								<a href="#" class="modify" onclick="addNewAddress();">修改
 								</a>
 							</div>
 						</li>
@@ -216,7 +209,7 @@
 							<div class="overlay" id="overlay-1">
 								<a href="#" class="delete">删除
 								</a>
-								<a href="#" class="modify">修改
+								<a href="#" class="modify" onclick="addNewAddress();">修改
 								</a>
 							</div>
 						</li>
@@ -226,7 +219,7 @@
 							<div class="overlay" id="overlay-2">
 								<a href="#" class="delete">删除
 								</a>
-								<a href="#" class="modify">修改
+								<a href="#" class="modify" onclick="addNewAddress();">修改
 								</a>
 							</div>
 						</li>
@@ -236,7 +229,7 @@
 							<div class="overlay" id="overlay-3">
 								<a href="#" class="delete">删除
 								</a>
-								<a href="#" class="modify">修改
+								<a href="#" class="modify" onclick="addNewAddress();">修改
 								</a>
 							</div>
 						</li>
@@ -246,7 +239,7 @@
 							<div class="overlay" id="overlay-4">
 								<a href="#" class="delete">删除
 								</a>
-								<a href="#" class="modify">修改
+								<a href="#" class="modify" onclick="addNewAddress();">修改
 								</a>
 							</div>
 						</li>
@@ -256,7 +249,7 @@
 							<div class="overlay" id="overlay-5">
 								<a href="#" class="delete">删除
 								</a>
-								<a href="#" class="modify">修改
+								<a href="#" class="modify" onclick="addNewAddress();">修改
 								</a>
 							</div>
 						</li>
@@ -266,7 +259,7 @@
 							<div class="overlay" id="overlay-6">
 								<a href="#" class="delete">删除
 								</a>
-								<a href="#" class="modify">修改
+								<a href="#" class="modify" onclick="addNewAddress();">修改
 								</a>
 							</div>
 						</li>
@@ -276,17 +269,15 @@
 							<div class="overlay" id="overlay-7">
 								<a href="#" class="delete">删除
 								</a>
-								<a href="#" class="modify">修改
+								<a href="#" class="modify" onclick="addNewAddress();">修改
 								</a>
 							</div>
 						</li>
 						<li class="address_item" id="address-item-8" onmouseover="showOverlay('8')" onmouseout="hideOverlay('8')">
-							<p class="name">广东广州 （徐曹植收）</p>
-							<p class="addr_info">白云区机场路67号车品E库2楼2C06 15900033222</p>
+							<p class="add_new">+</p>
 							<div class="overlay" id="overlay-8">
-								<a href="#" class="delete">删除
-								</a>
-								<a href="#" class="modify">修改
+								<a href="#" class="add_new_overlay" onclick="addNewAddress();">
+									+
 								</a>
 							</div>
 						</li>
@@ -299,7 +290,50 @@
 		</div>
 	</div>
 	<!--我的悦车,主体结束-->
-
+	<!-- 地址修改弹出框开始 -->
+	<div class="address_pop" id="address-pop">
+		<div class="pop_head">
+			<p>使用新地址</p>
+			<a href="javascript:void(0);" class="pop_close" id="popClose"></a>
+		</div>
+		<div class="pop_addr">
+			<form class="pop_form">
+				<ul class="form_list">
+					<li class="form_item">
+						<p class="form_title">所在地区：</p>
+						<p class="form_mid">*</p>
+						<div id="chooseArea">
+                        </div>
+					</li>
+					<li class="form_item">
+						<p class="form_title">邮政编码：</p>
+						<p class="form_mid">*</p>
+						<input type="text" class="post_code">
+					</li>
+					<li class="form_item form_item_special">
+						<p class="form_title">详细地址：</p>
+						<p class="form_mid">*</p>
+						<textarea name="totalAddress" id="totalAddress" cols="30" rows="2" class="total_address" ></textarea>
+					</li>
+					<li class="form_item">
+						<p class="form_title">收件人姓名：</p>
+						<p class="form_mid">*</p>
+						<input type="text" class="recieve_name">
+					</li>
+					<li class="form_item">
+						<p class="form_title">联系电话：</p>
+						<p class="form_mid">*</p>
+						<input type="text" class="phone_num">
+					</li>
+				</ul>
+			</form>
+			<div class="btn_group">
+				<input type="button" value="确定" class="sure">
+				<input type="button" value="取消" class="cancel" id="popClose" onclick="hidePopForm();">
+			</div>
+		</div>
+	</div>
+	<!-- 地址修改弹出框结束 -->
 	<!--footer begin-->
 	<div class="w">
 		<ul class="footer">
@@ -413,5 +447,18 @@
 		</div>
 	</div>
 	<!--copytright end-->
+
+	<!-- 页面js -->
+	<script type="text/javascript" src="../res/js/userCenter.js"></script>
+	<script type="text/javascript" src="../res/js/wrap.js"></script>
+	<script src="../res/js/jquery.lightbox_me.js"></script>
+	<script src="../res/js/jquery.provincesCity.js"></script>
+	<script src="../res/js/provincesdata.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		funPlaceholder(document.getElementById("search_input"));
+        $("#chooseArea").ProvinceCity();
+	});
+	</script>
 </body>
 </html>
