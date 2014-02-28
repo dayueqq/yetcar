@@ -1,13 +1,12 @@
 .user_center{
 	width:998px;
-	height:480px;
+	height:auto;
 	margin:15px auto;
 	border:solid #d9d9d9 1px;
 }
 .center_left{
 	width:149px;
-	height:480px;
-	border-right:solid #d9d9d9 1px;
+	height:100%;
 	float: left;
 }
 .center_left ul{
@@ -36,6 +35,8 @@
 	width:848px;
 	height:auto;
 	float: left;
+	border-left:solid #d9d9d9 1px;
+	padding-bottom:30px;
 }
 .table_head{
 	width:848px;
@@ -46,7 +47,7 @@
 	font-size: 12px;
 	color: #000;
 	float: left;
-	padding: 0 27px 0 13px;
+	padding: 0 29px 0 11px;
 	border-left:solid #d9d9d9 1px;
 }
 .table_head li.product_head_li{
@@ -55,22 +56,22 @@
 	padding-left:35px;
 }
 .table_head li.product_head_li1{
-	padding-right:67px;
+	padding-right:49px;
 }
 .table_head li.product_head_li2{
-	padding-right:47px;
+	padding-right:28px;
 }
 
 .table_list_box{
 	width:810px;
-	height:366px;
+	height:auto;
 	overflow: hidden;
 	margin:0 auto;
 	margin-bottom:18px;
 }
 .table_list{
 	width:810px;
-	height:60px;
+	height:auto;
 	background: #f8f8f8;
 	border-bottom:solid #dcdcdc 1px;
 }
@@ -79,33 +80,39 @@
 }
 .table_list li div{
 	margin-top:11px;
-	margin-left:15px;
+	margin-left:13px;
+	margin-bottom:17px;
 }
 .product_list_li{
 	width:204px;
-	height: 60px;
+	height:auto;
 }
 .product_list_li1{
-	width:117px;
-	height: 60px;
-	background:#f0f0f0;
+	width:97px;
+	height:60px;
 }
 .product_list_li2{
 	width:77px;
 	height: 60px;
 }
 .product_list_li3{
-	width:129px;
+	width:88px;
+	height:auto;
+}
+.product_list_li3 div{
+	width:75px;
+	height:39px;
+}
+.product_list_li3_2{
+	width:88px;
 	height: 60px;
-	background:#f0f0f0;
 }
 .product_list_li4{
-	width:109px;
+	width:88px;
 	height: 60px;
 }
 .product_list_li5{
-	background:#f0f0f0;
-	width:89px;
+	width:88px;
 	height: 60px;
 }
 .product_list_li6{
@@ -142,7 +149,7 @@
 /*page*/
 .change_page{
 	width:830px;
-	height:45px;
+	height:30px;
 }
 .change_page a{
 	width:60px;
@@ -313,6 +320,7 @@
 	height:300px;
 	background: #fff;
 	border:8px solid #999999;
+	display: none;
 }
 .pop_head{
 	width:700px;
@@ -472,4 +480,8 @@
 }
 .cancel:hover{
 	background: #666;
+}
+.product_list_li span.red_word{
+	font-weight: 700;
+	color:#c40000;
 }

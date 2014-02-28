@@ -103,7 +103,7 @@
 	
 	<!--我的悦车,主体开始-->
 	<div class="w">
-		<div class="user_center">
+		<div class="user_center" id="user-center">
 			<div class="center_left">
 				<ul>
 					<li>
@@ -124,11 +124,12 @@
 					<li class="product_head_li">订单信息</li>
 					<li class="product_head_li1">订单号</li>
 					<li>收货人</li>
-					<li class="product_head_li1">订单金额</li>
 					<li class="product_head_li2">下单时间</li>
-					<li>订单状态</li>
+					<li class="product_head_li2">订单状态</li>
+					<li class="product_head_li2">商品金额</li>
+					<li class="product_head_li2">订单总额</li>
 					<li>操作</li>
-					<br class="all">
+					<br clear="all">
 				</ul>
 				<div class="table_list_box">
 					<ul class="table_list">
@@ -136,7 +137,17 @@
 							<div>
 								<img src="../res/img/product/userCenterListPic-40-40.jpg" border="0"/>
 								<a href="#" class="product_name">飞歌导航GALAXY双核安卓系统飞歌导航GALAXY双核安卓系统</a>
-								<br class="all">
+								<br clear="all">
+							</div>
+							<div>
+								<img src="../res/img/product/userCenterListPic-40-40.jpg" border="0"/>
+								<a href="#" class="product_name">飞歌导航GALAXY双核安卓系统飞歌导航GALAXY双核安卓系统</a>
+								<br clear="all">
+							</div>
+							<div>
+								<img src="../res/img/product/userCenterListPic-40-40.jpg" border="0"/>
+								<a href="#" class="product_name">飞歌导航GALAXY双核安卓系统飞歌导航GALAXY双核安卓系统</a>
+								<br clear="all">
 							</div>
 						</li>
 						<li class="product_list_li1">
@@ -147,13 +158,6 @@
 						<li class="product_list_li2">
 							<div>
 								<span>徐曹植</span>
-							</div>
-						</li>
-						<li class="product_list_li3">
-							<div>
-								<span>￥777.77</span>
-								<br>
-								<span>(货到付款)</span>
 							</div>
 						</li>
 						<li class="product_list_li4">
@@ -168,6 +172,28 @@
 								<span>等待收货</span>
 							</div>
 						</li>
+						<li class="product_list_li3">
+							<div>
+								<span>￥777.77</span>
+								<br>
+								<span>(货到付款)</span>
+							</div>
+							<div>
+								<span>￥777.77</span>
+								<br>
+								<span>(货到付款)</span>
+							</div>
+							<div>
+								<span>￥777.77</span>
+								<br>
+								<span>(货到付款)</span>
+							</div>
+						</li>
+						<li class="product_list_li3_2">
+							<div>
+								<span class="red_word">￥7777.77</span>
+							</div>
+						</li>
 						<li class="product_list_li6">
 							<div>
 								<a href="#" class="dingdan_operation">查看</a>
@@ -179,6 +205,61 @@
 								<a href="#" class="dingdan_operation">删除</a>
 							</div>
 						</li>
+						<br clear="all">
+					</ul><ul class="table_list">
+						<li class="product_list_li">
+							<div>
+								<img src="../res/img/product/userCenterListPic-40-40.jpg" border="0"/>
+								<a href="#" class="product_name">飞歌导航GALAXY双核安卓系统飞歌导航GALAXY双核安卓系统</a>
+								<br clear="all">
+							</div>
+						</li>
+						<li class="product_list_li1">
+							<div>
+								<span>815109930</span>
+							</div>
+						</li>
+						<li class="product_list_li2">
+							<div>
+								<span>徐曹植</span>
+							</div>
+						</li>
+						<li class="product_list_li4">
+							<div>
+								<span>2013-11-30</span>
+								<br>
+								<span>07:07:07</span>
+							</div>
+						</li>
+						<li class="product_list_li5">
+							<div>
+								<span>等待收货</span>
+							</div>
+						</li>
+						<li class="product_list_li3">
+							<div>
+								<span>￥777.77</span>
+								<br>
+								<span>(货到付款)</span>
+							</div>
+						</li>
+						<li class="product_list_li3_2">
+							<div>
+								<span class="red_word">￥7777.77</span>
+							</div>
+						</li>
+						<li class="product_list_li6">
+							<div>
+								<a href="#" class="dingdan_operation">查看</a>
+								<span>|</span>
+								<a href="#" class="dingdan_operation">支付</a>
+								<br>
+								<a href="#" class="dingdan_operation">确认</a>
+								<span>|</span>
+								<a href="#" class="dingdan_operation">删除</a>
+							</div>
+						</li>
+						<br clear="all">
 					</ul>
 					
 				</div>
@@ -281,17 +362,17 @@
 								</a>
 							</div>
 						</li>
-						<br clear="all">
+						
 					</ul>
 				</div>
 			</div>
 			<!-- 管理我的收货地址结束 -->
-			<br class="all">
+			<br clear="all">
 		</div>
 	</div>
 	<!--我的悦车,主体结束-->
 	<!-- 地址修改弹出框开始 -->
-	<div class="address_pop" id="address-pop" style="display:none;">
+	<div class="address_pop" id="address-pop">
 		<div class="pop_head">
 			<p>使用新地址</p>
 			<a href="javascript:void(0);" class="pop_close" id="popClose"></a>
