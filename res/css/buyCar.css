@@ -107,7 +107,8 @@
 }
 .table_list li.list_num{
 	width:100px;
-	height: 90px;
+	height: 58px;
+	padding-top: 32px;
 }
 .table_list li.list_operation{
 	width:100px;
@@ -197,4 +198,26 @@
 }
 .go_to_pay:hover{
 	background:#c40000;
+}
+.min{
+	display:block;
+	width:17px;
+	height:22px;
+	float: left;
+	margin-left: 8px;
+}
+.num{
+	display: block;
+	width:40px;
+	height:20px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+}
+.add{
+	display: block;
+	width: 17px;
+	height: 22px;
+	float: left;
 }

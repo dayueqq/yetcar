@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../res/css/buyCar.css" class="href">
 	<script src="../res/js/jquery.min.js"></script>
 	<script type="text/javascript" src="../res/js/innerPage.js"></script>
+	<script type="text/javascript" src="../res/js/buyCar.js"></script>
 	<!--wrap通用-->
 	<link rel="stylesheet" type="text/css" href="../res/css/wrap.css">
 	<script type="text/javascript" src="../res/js/wrap.js"></script>
@@ -155,7 +156,11 @@
 						<p>款式：<span>奥迪A7珍藏版车载款</span></p>
 					</li>
 					<li class="list_price"><p>1700.00</p></li>
-					<li class="list_num"></li>
+					<li class="list_num">
+						<input id="min0" class="min" name="" type="button" value="-" onclick="buyMinus('0');"/>
+						<input id="num0" class="num" name="num" type="text" value="1" readonly="true"/>
+						<input id="add0" class="add" name="" type="button" value="+" onclick="buyAdd('0');"/>
+					</li>
 					<li class="list_operation"><a href="#">删除</a></li>
 				</ul><ul class="table_list">
 					<li class="list_1"><input type="checkbox"></li>
@@ -165,7 +170,11 @@
 						<p>款式：<span>奥迪A7珍藏版车载款</span></p>
 					</li>
 					<li class="list_price"><p>1700.00</p></li>
-					<li class="list_num"></li>
+					<li class="list_num">
+						<input id="min1" class="min" name="" type="button" value="-" onclick="buyMinus('1');"/>
+						<input id="num1" class="num" name="num" type="text" value="1" readonly="true"/>
+						<input id="add1" class="add" name="" type="button" value="+" onclick="buyAdd('1');"/>
+					</li>
 					<li class="list_operation"><a href="#">删除</a></li>
 				</ul><ul class="table_list">
 					<li class="list_1"><input type="checkbox"></li>
@@ -175,7 +184,11 @@
 						<p>款式：<span>奥迪A7珍藏版车载款车专用智能双核安卓系统导车专用智能双核安卓系统导</span></p>
 					</li>
 					<li class="list_price"><p>1700.00</p></li>
-					<li class="list_num"></li>
+					<li class="list_num">
+						<input id="min2" class="min" name="" type="button" value="-" onclick="buyMinus('2');"/>
+						<input id="num2" class="num" name="num" type="text" value="1" readonly="true"/>
+						<input id="add2" class="add" name="" type="button" value="+" onclick="buyAdd('2');"/>
+					</li>
 					<li class="list_operation"><a href="#">删除</a></li>
 				</ul>
 				<div class="whole_price">
