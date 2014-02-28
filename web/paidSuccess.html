@@ -5,18 +5,12 @@
 	<title>悦车商城 (yetcar.com)-正品低价、品质保障、货到付款、配送及时、放心服务、轻松购物！</title>
 	<meta name="description" content="悦车商城 (yetcar.com)-专业的汽车用品网上购物商城，在线销售上千种汽车优质商品。便捷、诚信的服务，为您提供愉悦的网上购物体验! ">
 	<meta name="Keywords" content="网上购物,网上汽车商城,悦车商城，汽车用品商城">
-	<link rel="stylesheet" type="text/css" href="../res/css/innerPage.css">
+	<link rel="stylesheet" type="text/css" href="../res/css/paidSuccess.css">
 	<script src="../res/js/jquery.min.js"></script>
 	<script type="text/javascript" src="../res/js/innerPage.js"></script>
 	<!--wrap通用-->
 	<link rel="stylesheet" type="text/css" href="../res/css/wrap.css">
 	<script type="text/javascript" src="../res/js/wrap.js"></script>
-	<!--footer通用-->
-	<link rel="stylesheet" type="text/css" href="../res/css/footer.css">
-	<script type="text/javascript" src="../res/js/footer.js"></script>
-	<!--copyright通用-->
-	<link rel="stylesheet" type="text/css" href="../res/css/copyright.css">
-	<script type="text/javascript" src="../res/js/copyright.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		funPlaceholder(document.getElementById("search_input"));
@@ -116,7 +110,20 @@
 	
 	<!--我的悦车,主体开始-->
 	<div class="w">
-		
+		<ul class="process_name">
+				<li class="process_01 isPass">拍下商品</li>
+				<li class="process_02 isPass">我的购物车</li>
+				<li class="process_03 isPassing">填写核对订单信息</li>
+				<li class="process_04">付款（货到付款）</li>
+		</ul>
+		<img class="process_pic" src="../res/img/process-03.jpg" border="0">
+		<div class="whole_price">
+		</div>
+		<p class="congratulation">
+			恭喜！您的订单已<span>提交成功</span>!
+		</p>
+		<input type="button" id="goPay" class="go_pay" value="立即付款">
+        <p class="more">您还可以在&nbsp;&nbsp;<a href="#" class="my_yetcar">我的悦车</a>&nbsp;&nbsp;中查看订单信息。</p>
 	</div>
 	<!--我的悦车,主体结束-->
 
